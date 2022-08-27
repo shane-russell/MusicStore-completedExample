@@ -26,7 +26,7 @@ namespace MusicStore.Web
             services.AddSingleton<IFileProvider, HostFileProvider>();
             services.AddSingleton<IGenreRepository, GenreDummyRepository>();
             services.AddSingleton<IAlbumRepository, AlbumDummyRepository>();
-            //services.AddSingleton<IAlbumViewModelFactory, AlbumViewModelFactory>();
+            services.AddSingleton<IAlbumViewModelFactory, AlbumViewModelFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
